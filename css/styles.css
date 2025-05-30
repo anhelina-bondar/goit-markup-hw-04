@@ -232,6 +232,7 @@ img {
   align-items: center;
   height: 112px;
   margin-bottom: 8px;
+  border-radius: 4px;
 }
 
 .features-subtitle {
@@ -411,6 +412,7 @@ img {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-text {
@@ -439,5 +441,5 @@ img {
 
 .footer-icon-link:hover,
 .footer-icon-link:focus {
-  background-color: #404bbf;
+  background-color: #31d0aa;
 }
