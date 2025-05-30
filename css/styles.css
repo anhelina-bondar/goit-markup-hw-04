@@ -156,6 +156,9 @@ img {
     url(../images/people-office.jpg);
   max-width: 1440px;
   margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .solution-title {
@@ -219,6 +222,16 @@ img {
 
 .features-list-item {
   width: calc((100% - 24px * 3) / 4);
+}
+
+.icon-container {
+  background-color: #f4f4fd;
+  border: 1px solid #8e8f99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 112px;
+  margin-bottom: 8px;
 }
 
 .features-subtitle {
@@ -292,12 +305,13 @@ img {
   display: flex;
   padding: 8px 16px 0 16px;
   gap: 24px;
+  justify-content: center;
 }
 
 .icon-list-link {
   background-color: #4d5ae5;
   fill: #ffffff;
-  border-radius: 50px;
+  border-radius: 50%;
   width: 40px;
   height: 40px;
   display: flex;
@@ -306,10 +320,13 @@ img {
   justify-content: center;
 }
 
-.icon-team-item {
+.icon-list {
+  fill: #f4f4fd;
 }
 
-.icon-list {
+.icon-list-link:hover,
+.icon-list-link:focus {
+  background-color: #404bbf;
 }
 
 /* -------------- SECTION 4 ------------- */
@@ -371,10 +388,15 @@ img {
   padding: 100px 0;
 }
 
+.footer-text-container {
+  margin-right: 120px;
+}
+
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
 }
+
 .invocation-descr {
   color: #f4f4fd;
   font-size: 16px;
@@ -385,4 +407,37 @@ img {
 
 .logo-name-footer {
   color: #f4f4fd;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.footer-icon-list {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-icon-link {
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  padding: 8px;
+  fill: #f4f4fd;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+  background-color: #404bbf;
 }
